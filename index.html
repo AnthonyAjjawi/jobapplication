@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="name">Full Name: </label>
+            <input type="text" id="name">
+            <label for="email">Email: </label>
+            <input type="email" id="email">
+            <select name="" id="">
+                <option value="">Select a position</option>
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+            </select>
+            <fieldset>
+                <legend>Availability</legend>
+              
+                <input type="radio" id="fulltime" name="availability" value="full-time">
+                <label for="fulltime">Full-time</label>
+              
+                <input type="radio" id="parttime" name="availability" value="part-time">
+                <label for="parttime">Part-time</label>
+              </fieldset>
+              <label for="message">Why do you want this job?</label>
+
+              <textarea name="message" id="message" rows="4" cols="50"></textarea>
+              <input type="submit" />
+        </form>
+    </div>
+</body>
+</html>
