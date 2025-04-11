@@ -6,8 +6,17 @@
 
 body {
     line-height: 1.6;
+    font-family: 'Ariel', sans-serif;
+    font-weight: 600;
+    background: url(./image/file-20180820-30593-1nxanpj.avif);
+    background-size: cover;
+    z-index: 1;
+    scroll-behavior: smooth;
 }
 
+
+
+/* form */
 form {
     display: flex;
     flex-direction: column;
@@ -15,5 +24,109 @@ form {
     margin: 100px auto;
     max-width: 500px;
     gap: 1.5rem;
+    background-color: #F5E5F0;
 
+}
+
+
+/* full name input */
+input[type="text"] {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border: 2px solid #555;
+}
+
+/* email input */
+input[type="email"] {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none;
+}
+
+input[type="email"]:focus {
+    border: 2px solid #555;
+}
+
+/* select */
+select {
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    width: 200px;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none;
+    font-weight: 600;
+}
+
+select option {
+    font-weight: 600
+}
+
+select:focus {
+    border: 2px solid #555;
+}
+
+/* fieldset */
+fieldset {
+    padding: 20px 20px;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none;
+}
+
+fieldset {
+    border: 2px solid #555;
+}
+
+/* textarea */
+textarea {
+    width: 200px;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none;
+}
+
+
+textarea:focus {
+    border: 2px solid #555;
+}
+
+/* submit */
+input[type="submit"] {
+    width: 200px;
+    padding: 10px 15px;
+    border: 3px solid #ccc;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    outline: none;
+}
+
+
+input[type="submit"] {
+    border: 2px solid #555;
+}
+
+/* invalid pseudo-selector */
+
+
+
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border: 2px solid red;
+    /* background-color: beige; */
 }
