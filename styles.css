@@ -29,6 +29,12 @@ form {
 }
 
 
+
+/* label name */
+.name {
+    margin-top: 10px;
+}
+
 /* full name input */
 input[type="text"] {
     padding: 10px 15px;
@@ -86,9 +92,11 @@ fieldset {
     outline: none;
 }
 
-fieldset {
+fieldset:focus {
     border: 2px solid #555;
 }
+
+
 
 /* textarea */
 textarea {
@@ -112,6 +120,7 @@ input[type="submit"] {
     transition: 0.5s;
     -webkit-transition: 0.5s;
     outline: none;
+    margin-bottom: 10px;
 }
 
 
@@ -130,3 +139,9 @@ textarea:invalid {
     border: 2px solid red;
     /* background-color: beige; */
 }
+
+input:valid,
+select:valid,
+textarea:valid {
+    border: 2px solid green;
+} 
