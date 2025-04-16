@@ -92,9 +92,6 @@ fieldset {
     outline: none;
 }
 
-fieldset:focus {
-    border: 2px solid #555;
-}
 
 
 
@@ -152,4 +149,8 @@ textarea:valid {
 
 input[type="submit"]:hover {
     border: 2px solid #ccc;
+}
+
+fieldset:hover {
+    border: 2px solid #555;
 }
